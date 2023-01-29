@@ -112,6 +112,15 @@ namespace Collection.UnitTests
 
         }
 
+        [Test]
+        public void Test_Collection_Clear()
+        {
+            var collection = new Collection<int>(5, 6, 7);
+            collection.Clear();
+
+            Assert.That(collection.ToString(), Is.EqualTo("[]"));
+        }
+
 
 
 
